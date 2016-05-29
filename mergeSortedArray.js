@@ -1,4 +1,4 @@
-function mergeSortedArray(a, b){
+function mergeSortedArray(a, b) {
   var merged = [],
       aElm = a[0],
       bElm = b[0],
@@ -16,7 +16,7 @@ function mergeSortedArray(a, b){
              or both exists and aElm < bElm
     this is the critical part of the example
   */
-  while(aElm || bElm){
+  while(aElm || bElm) {
    if((aElm && !bElm) || aElm < bElm){
      merged.push(aElm);
      aElm = a[i++];
@@ -29,5 +29,5 @@ function mergeSortedArray(a, b){
   return merged;
 }
 
-> mergeSortedArray([2,5,6,9], [1,2,3,29]);
- = [1, 2, 2, 3, 5, 6, 9, 29]
+// > mergeSortedArray([2,5,6,9], [1,2,3,29]);
+//  = [1, 2, 2, 3, 5, 6, 9, 29]
