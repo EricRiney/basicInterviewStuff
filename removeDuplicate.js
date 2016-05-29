@@ -1,3 +1,5 @@
+// removes the duplicates from an array 
+
 function removeDuplicate(arr) {
   var exists ={},
       outArr = [],

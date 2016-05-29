@@ -1,6 +1,6 @@
 //find the largest sum of any two elements
 
-function topSum(arr){
+function topSum(arr) {
 
   var biggest = arr[0],
       second = arr[1],
@@ -14,13 +14,13 @@ function topSum(arr){
     second = arr[0];
   }
 
-  for(; i<len; i++){
+  for(; i<len; i++) {
 
-   if(arr[i] > biggest){
+   if(arr[i] > biggest) {
       second = biggest;
       biggest = arr[i];
     }
-   else if (arr[i]>second){
+   else if (arr[i]>second) {
       second = arr[i];
    }
 

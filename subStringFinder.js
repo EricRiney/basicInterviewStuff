@@ -1,7 +1,6 @@
 //can you match substring of a sting
 
-
-function subStringFinder(str, subStr){
+function subStringFinder(str, subStr) {
   var idx = 0,
       i = 0,
       j = 0,

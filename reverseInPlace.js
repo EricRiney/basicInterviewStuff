@@ -1,3 +1,5 @@
+// reverses the words in a string but keeps em in the same place
+// so gross
 
 function reverseInPlace(str){
   return str.split(' ').reverse().join(' ').split('').reverse().join('');

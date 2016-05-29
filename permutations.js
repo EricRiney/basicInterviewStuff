@@ -1,6 +1,6 @@
 // Create all permutation of a string
 
-function permutations(str){
+function permutations(str) {
 var arr = str.split(''),
     len = arr.length,
     perms = [],

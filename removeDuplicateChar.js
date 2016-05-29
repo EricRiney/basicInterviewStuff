@@ -1,3 +1,5 @@
+// removes the duplicate chars from a string
+
 function removeDuplicateChar(str) {
   var len = str.length,
       char,
