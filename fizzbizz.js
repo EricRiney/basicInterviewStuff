@@ -1,3 +1,5 @@
+// the question of questions
+
 function fizBiz(number) {
     for (var i = 1; i <= number; i++) {
         if (i % 15 == 0)
@@ -6,8 +8,8 @@ function fizBiz(number) {
             console.log("bizz");
         else if (i % 3 == 0)
             console.log("fizz");
-        else 
+        else
             console.log(i)
     }
 }
-console.log(fizBiz(100));
+//console.log(fizBiz(100));

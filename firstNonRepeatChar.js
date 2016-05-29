@@ -1,3 +1,5 @@
+// finds the first non-repeating char in a string
+
 function firstNonRepeatChar(str) {
   var len = str.length,
       char,
