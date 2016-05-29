@@ -1,4 +1,5 @@
-//O(n)
+// lil guy finds the prime factors
+// O(n)
 
 function primeFactors(n) {
     var factors = [],
@@ -16,4 +17,4 @@ function primeFactors(n) {
     return factors;
 }
 
-console.log(primeFactors(69)); //[3, 23]
+// console.log(primeFactors(69)); //[3, 23]

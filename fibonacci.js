@@ -11,4 +11,4 @@ function fibonacci(n) {
     return fibo[n];
 }
 
-console.log(fibonacci(12)); //144   
+// console.log(fibonacci(12)); //144   
