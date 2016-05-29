@@ -1,9 +1,10 @@
+// IS PRIME
 
-function isPrime(n){
+function isPrime(n) {
   var divisor = 2;
 
-  while (n > divisor){
-    if(n % divisor == 0){
+  while (n > divisor) {
+    if(n % divisor == 0) {
      return false;
     }
     else
@@ -12,8 +13,7 @@ function isPrime(n){
   return true;
 }
 
-> isPrime(137);
-  = true
-> isPrime(237);
-  = false
-        
+// > isPrime(137);
+//   = true
+// > isPrime(237);
+//   = false

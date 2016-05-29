@@ -1,3 +1,5 @@
+// finds the missing number in an array
+
 function missingNumber(arr) {
   var n = arr.length+1,
   sum = 0,

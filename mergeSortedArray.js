@@ -1,3 +1,5 @@
+// this is just plain gross
+
 function mergeSortedArray(a, b) {
   var merged = [],
       aElm = a[0],
