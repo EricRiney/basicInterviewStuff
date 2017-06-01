@@ -15,7 +15,6 @@ public class StringDemo {
         
     }
 
-     */
 
     static int[] oddNumbers(int l, int r) {
         int start = l;
