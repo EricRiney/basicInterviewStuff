@@ -17,6 +17,7 @@ function firstNonRepeatChar(str) {
        return j;
   }
 }
-//
-// >firstNonRepeatChar('the quick brown fox jumps then quickly blow air');
+
+var meow = firstNonRepeatChar('the quick brown fox jumps then quickly blow air');
+console.log(meow);
 //  = "f"
