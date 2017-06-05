@@ -22,8 +22,7 @@ function mergeSortedArray(a, b) {
    if((aElm && !bElm) || aElm < bElm){
      merged.push(aElm);
      aElm = a[i++];
-   }
-   else {
+   } else {
      merged.push(bElm);
      bElm = b[j++];
    }
