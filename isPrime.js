@@ -5,14 +5,14 @@ function isPrime(n) {
   while (n > divisor) {
     if(n % divisor == 0) {
      return false;
-    }
-    else
+    } else {
       divisor++;
+    }
   }
   return true;
 }
 
-// > isPrime(137);
+console.log(isPrime(137));
 //   = true
-// > isPrime(237);
+console.log(isPrime(237));
 //   = false

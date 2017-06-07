@@ -14,12 +14,12 @@ function mergeSortedArray(a, b) {
   /*
   if aElm or bElm exists we will insert to merged array
   (will go inside while loop)
-   to insert: aElm exists and bElm doesn't exists
-             or both exists and aElm < bElm
-    this is the critical part of the example
+  to insert: aElm exists and bElm doesn't exists
+  or both exists and aElm < bElm
+  this is the critical part of the example
   */
   while(aElm || bElm) {
-   if((aElm && !bElm) || aElm < bElm){
+   if((aElm && !bElm) || aElm < bElm) {
      merged.push(aElm);
      aElm = a[i++];
    } else {
@@ -30,5 +30,6 @@ function mergeSortedArray(a, b) {
   return merged;
 }
 
-// > mergeSortedArray([2,5,6,9], [1,2,3,29]);
+var test = mergeSortedArray([2,5,6,9], [1,2,3,29]);
+console.log(test);
 //  = [1, 2, 2, 3, 5, 6, 9, 29]
