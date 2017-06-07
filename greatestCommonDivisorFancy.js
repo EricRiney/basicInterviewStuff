@@ -3,8 +3,9 @@
 //found it in a book
 
 function greatestCommonDivisor(a, b) {
-   if(b == 0)
+   if(b == 0) {
      return a;
-   else
+   } else {
      return greatestCommonDivisor(b, a%b);
+   }
 }
