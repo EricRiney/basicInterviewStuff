@@ -1,9 +1,9 @@
 // finds the first non-repeating char in a string
 
 function firstNonRepeatChar(str) {
-  var len = str.length,
-      char,
-      charCount = {};
+  var len = str.length;
+  var char;
+  var charCount = {}
   for(var i =0; i<len; i++) {
     char = str[i];
     if(charCount[char]){

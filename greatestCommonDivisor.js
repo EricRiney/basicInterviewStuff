@@ -1,8 +1,8 @@
 // finds teh greatest common divisor between two ints
 
 function greatestCommonDivisor(a, b) {
-    var divisor = 2,
-        greatestDivisor = 1;
+    var divisor = 2;
+    var greatestDivisor = 1;
 
     //if u pass a -ve number this will not work. fix it dude!!
     if (a < 2 || b < 2) {
@@ -17,5 +17,5 @@ function greatestCommonDivisor(a, b) {
     return greatestDivisor;
 }
 
-//console.log(greatestCommonDivisor(14, 21)); //7
-//console.log(greatestCommonDivisor(69, 169)); //1
+console.log(greatestCommonDivisor(14, 21)); //7
+console.log(greatestCommonDivisor(69, 169)); //1
