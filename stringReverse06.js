@@ -5,5 +5,5 @@ String.prototype.reverse = function () {
   return this.split('').reverse().join('');
 }
 
-> 'abc'.reverse();
-  = 'cba'
+
+console.log('abc'.reverse());
