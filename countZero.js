@@ -1,4 +1,4 @@
-//Count Total number of zeros from 1 upto n
+//Count Total number of zeros from 1 up to n
 
 function countZero(n){
   var count = 0;
