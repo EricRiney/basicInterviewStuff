@@ -5,7 +5,7 @@ function removeDuplicateChar(str) {
       char,
       charCount = {},
       newStr = [];
-  for(var i =0; i<len; i++) {
+  for(var i = 0; i < len; i++) {
     char = str[i];
     if(charCount[char]){
       charCount[char]++;
