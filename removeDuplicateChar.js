@@ -1,10 +1,10 @@
 // removes the duplicate chars from a string
 
 function removeDuplicateChar(str) {
-  var len = str.length,
-      char,
-      charCount = {},
-      newStr = [];
+  var len = str.length;
+  var char;
+  var charCount = {};
+  var newStr = [];
   for(var i = 0; i < len; i++) {
     char = str[i];
     if(charCount[char]){
