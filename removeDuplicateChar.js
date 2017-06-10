@@ -14,7 +14,7 @@ function removeDuplicateChar(str) {
       charCount[char] = 1;
   }
   for (var j in charCount) {
-    if (charCount[j]==1)
+    if (charCount[j] == 1)
        newStr.push(j);
   }
   return newStr.join('');
