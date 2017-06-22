@@ -3,7 +3,7 @@
 function missingNumber(arr) {
   var n = arr.length + 1;
   var sum = 0;
-  var expectedSum = n * (n+1)/2;
+  var expectedSum = n * (n + 1) / 2;
   for(var i = 0, len = arr.length; i < len; i++) {
     sum += arr[i];
   }
