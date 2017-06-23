@@ -25,4 +25,5 @@ var arr = str.split(''),
 }
 
 test = permutations("meow meow");
+
 console.log(test);
