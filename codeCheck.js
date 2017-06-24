@@ -59,8 +59,29 @@ function isPrime(num) {
     return true;
 }
 
+function isPal(str) {
+    var len = str.length
+    for (var i = 0; i <= len/2; i++) {
+        if (str[i] != str[len-1-i]) {
+            return false;
+        }
+    }
+    return false;
+}
 
-console.log(isPrime(10));
+function ctZero(num) {
+    var zeros = 0;
+    while (num > 0) {
+        zeros += Math.floor(num/10);
+        num = num/10
+    }
+    return zeros;
+}
+
+console.log(ctZero(10));
+
+
+//console.log(isPal("anahkhh"));
 
 //console.log(cars);
 
