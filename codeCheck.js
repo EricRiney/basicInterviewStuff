@@ -47,9 +47,22 @@ function firstNonRep(str) {
   }
 }
 
+function isPrime(num) {
+    var divsor = 2;
+    while (divsor < num) {
+        if (num % divsor) {
+            return false;
+        } else {
+            divsor++;
+        }
+    }
+    return true;
+}
 
 
-console.log(cars);
+console.log(isPrime(10));
+
+//console.log(cars);
 
 //console.log(remoDups('bananax'));
 //console.log(findUnique("bananaz"));
