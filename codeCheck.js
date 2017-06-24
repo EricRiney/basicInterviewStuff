@@ -35,10 +35,21 @@ function firstNonRep(str) {
     for (var i = 0; i < length; i++) {
         char = str[i];
         if (charCount[char]) {
-            charCount
+            charCount[char]++;
         }
-    } 
+        else 
+        charCount[char] = 1;
+    }
+    //console.log(charCount);
+    for (var letter in charCount) {
+        if (charCount[letter]==1)
+            return letter;
+  }
 }
 
-console.log(remoDups('bananax'));
+
+
+console.log(cars);
+
+//console.log(remoDups('bananax'));
 //console.log(findUnique("bananaz"));
