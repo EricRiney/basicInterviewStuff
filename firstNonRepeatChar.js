@@ -2,8 +2,8 @@
 
 function firstNonRepeatChar(str) {
   var len = str.length;
-  var char;
-  var charCount = {}
+  var char = '';
+  var charCount = {};
   for(var i =0; i<len; i++) {
     char = str[i];
     if(charCount[char]){
@@ -12,9 +12,10 @@ function firstNonRepeatChar(str) {
     else
       charCount[char] = 1;
   }
-  for (var j in charCount) {
-    if (charCount[j]==1)
-       return j;
+  console.log(charCount);
+  for (var letter in charCount) {
+    if (charCount[letter]==1)
+       return letter;
   }
 }
 

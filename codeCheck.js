@@ -8,10 +8,10 @@ function stringBack (s) {
     return newString;
 }
 
-function removeDups (str) {
+function findUnique (str) {
     var unique = '';
     for (var i = 0; i < str.length; i++) {
-        if (str.lastIndexOf(str[i]) != str.indexOf(str[i])) {
+        if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
             unique += str[i];
         }
     }
@@ -28,4 +28,17 @@ function remoDups (str) {
     return unique;
 }
 
+function firstNonRep(str) {
+    var length = str.length;
+    var char = '';
+    var charCount = [];
+    for (var i = 0; i < length; i++) {
+        char = str[i];
+        if (charCount[char]) {
+            charCount
+        }
+    } 
+}
+
 console.log(remoDups('bananax'));
+//console.log(findUnique("bananaz"));
