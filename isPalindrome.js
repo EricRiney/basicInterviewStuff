@@ -1,4 +1,6 @@
-//checks to see is a string is a palindrome
+// Write a function to verify a word as palindrome
+// Remember:
+// If you reverse a word and it becomes same as the previous word, it is called palindrome
 
 function isPalindrome(str) {
   var len = str.length;

@@ -1,10 +1,10 @@
-// finds teh greatest common divisor between two ints
+// Write a function to find the greatest common divisor of two numbers
 
 function greatestCommonDivisor(a, b) {
     var divisor = 2;
     var greatestDivisor = 1;
 
-    //if u pass a -ve number this will not work. fix it dude!!
+    //if u pass a -ve number this will not work.
     if (a < 2 || b < 2) {
         return 1;
     }

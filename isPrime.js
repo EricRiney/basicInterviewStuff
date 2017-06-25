@@ -1,4 +1,6 @@
-// IS PRIME
+// Write a function to verify a prime number
+// Remember:
+// a prime number is only divisible by itself and 1
 
 function isPrime(n) {
   var divisor = 2;

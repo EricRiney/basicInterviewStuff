@@ -1,5 +1,5 @@
-//Given two sorted lists of numbers in increasing order, write a function that
-//merges them into a single list of numbers which is also sorted
+// Given two sorted lists of numbers in increasing order, write a function that
+// merges them into a single list of numbers which is also sorted
 
 function mergeSortedArray(a, b) {
   var merged = [],
@@ -12,13 +12,6 @@ function mergeSortedArray(a, b) {
     return b;
   if(b.length ==0)
     return a;
-  /*
-  if aElm or bElm exists we will insert to merged array
-  (will go inside while loop)
-  to insert: aElm exists and bElm doesn't exists
-  or both exists and aElm < bElm
-  this is the critical part of the example
-  */
   while(aElm || bElm) {
    if((aElm && !bElm) || aElm < bElm) {
      merged.push(aElm);
