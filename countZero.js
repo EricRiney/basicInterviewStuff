@@ -1,4 +1,5 @@
-//Count Total number of zeros from 1 up to n
+// Given a positive integer N, count the total number of zeros
+// contained in the integers in the range 1 to N, inclusive.
 
 function countZero(n){
   var count = 0;

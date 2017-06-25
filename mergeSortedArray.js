@@ -1,4 +1,5 @@
-// this is just plain gross
+//Given two sorted lists of numbers in increasing order, write a function that
+//merges them into a single list of numbers which is also sorted
 
 function mergeSortedArray(a, b) {
   var merged = [],
