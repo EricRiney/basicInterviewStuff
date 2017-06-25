@@ -1,4 +1,5 @@
-// reverses the words in a string but keeps em in the same place
+// Write a function to reverses the words 
+// in a string but keeps em in the same place
 // so gross
 
 function reverseInPlace(str){

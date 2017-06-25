@@ -1,3 +1,4 @@
+// Write a function to reverse a string
 
 function reverse(str) {
   var rtnStr = '';
@@ -7,5 +8,6 @@ function reverse(str) {
   return rtnStr;
 }
 
-// > reverse('you are a nice dude');
-//   = "edud ecin a era uoy"
+// console.log(reverse("All dogs are good boys or girls"));
+// slrig ro syob doog era sgod llA
+

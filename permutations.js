@@ -1,4 +1,4 @@
-// Create all permutation of a string
+// Write a function to create all permutation of a string
 
 function permutations(str) {
 var arr = str.split(''),
@@ -24,6 +24,5 @@ var arr = str.split(''),
    return perms;
 }
 
-test = permutations("meow meow");
-
+test = permutations("meow");
 console.log(test);

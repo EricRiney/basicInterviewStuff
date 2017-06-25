@@ -1,4 +1,5 @@
-// finds the missing number in an array
+// from a unsorted array of numbers 1 to 100 excluding one number, 
+// write a function to find that number.
 
 function missingNumber(arr) {
   var n = arr.length + 1;

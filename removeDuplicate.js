@@ -1,4 +1,4 @@
-// removes the duplicates from an array 
+// Write a function to remove duplicate members from an array
 
 function removeDuplicate(arr) {
   var exists = {};

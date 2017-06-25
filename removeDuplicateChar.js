@@ -1,4 +1,4 @@
-// removes the duplicate chars from a string
+// Write a function that removes the duplicate chars from a string
 
 function removeDuplicateChar(str) {
   var len = str.length;
@@ -19,6 +19,6 @@ function removeDuplicateChar(str) {
   }
   return newStr.join('');
 }
-//
+
 // > removeDuplicateChar('Learn more javascript dude');
 //   = "Lnmojvsciptu"

@@ -1,3 +1,6 @@
+// Write a function to swap two numbers without using a temporary variable
+// but like use bit manipulation... like a logical conjunction becuase fuck you
+
 function swapNumb(a, b) {
   console.log("a: " + a + " and b: " + b);
   a = a ^ b;
