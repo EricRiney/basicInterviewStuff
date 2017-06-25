@@ -1,3 +1,10 @@
+// Write a function to iteratively calculate the Nth Fibonacci number
+// Remember:
+// fib(0) = 1
+// fib(1) = 1
+// fib(n) = fib(n -1) + fib(n - 2)
+
+
 // O(n)
 function fibonacci(n) {
     var fibo = [0, 1];
