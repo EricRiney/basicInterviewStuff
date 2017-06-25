@@ -31,7 +31,7 @@ function remoDups (str) {
 function firstNonRep(str) {
     var length = str.length;
     var char = '';
-    var charCount = [];
+    var charCount = {};
     for (var i = 0; i < length; i++) {
         char = str[i];
         if (charCount[char]) {
@@ -40,7 +40,7 @@ function firstNonRep(str) {
         else 
         charCount[char] = 1;
     }
-    //console.log(charCount);
+    console.log(charCount);
     for (var letter in charCount) {
         if (charCount[letter]==1)
             return letter;
@@ -78,9 +78,11 @@ function ctZero(num) {
     return zeros;
 }
 
-console.log(ctZero(10));
+//console.log(ctZero(10));
 
 
+
+console.log(firstNonRep("heir names are legendary: Sugar Ray Leonard, Marvelous Marvin Hagler, Thomas Hit Man Hearns, and Roberto Duran. They were exceptional boxers with unique combinations of power and speed. In another era, with"));
 //console.log(isPal("anahkhh"));
 
 //console.log(cars);

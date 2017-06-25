@@ -1,4 +1,4 @@
-// finds the first non-repeating char in a string
+// Write a function to find the first non repeating char in a string
 
 function firstNonRepeatChar(str) {
   var len = str.length;
