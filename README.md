@@ -34,20 +34,21 @@ Some of the key benefits of strict mode include:
 * Throws error on invalid usage of `delete`. The delete operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. Non-strict code will fail silently when an attempt is made to `delete` a non-configurable property, whereas strict mode will throw an error in such a case.
 
 **4. Consider the two functions below. Will they both return the same thing? Why or why not?**
-`function foo1()
-{
-  return {
-      bar: "hello"
-  };
-}
 
-function foo2()
-{
-  return
-  {
-      bar: "hello"
-  };
-}`
+`function foo1()`
+`{`
+  `return {`
+      `bar: "hello"`
+ ` };`
+`}`
+
+`function foo2()`
+`{`
+`  return`
+  `{`
+   `   bar: "hello"`
+ ` };`
+`}`
 
 Surprisingly, these two functions will not return the same thing. Rather:
 
