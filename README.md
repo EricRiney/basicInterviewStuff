@@ -32,3 +32,39 @@ Some of the key benefits of strict mode include:
 * Disallows duplicate property names or parameter values. Strict mode throws an error when it detects a duplicate named property in an object (e.g., `var object = {foo: "bar", foo: "baz"};`) or a duplicate named argument for a function (e.g., `function foo(val1, val2, val1){}`), thereby catching what is almost certainly a bug in your code that you might otherwise have wasted lots of time tracking down.
 * Makes `eval()` safer. There are some differences in the way `eval()` behaves in strict mode and in non-strict mode. Most significantly, in strict mode, variables and functions declared inside of an `eval()` statement are not created in the containing scope (they are created in the containing scope in non-strict mode, which can also be a common source of problems).
 * Throws error on invalid usage of `delete`. The delete operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. Non-strict code will fail silently when an attempt is made to `delete` a non-configurable property, whereas strict mode will throw an error in such a case.
+
+**4. Consider the two functions below. Will they both return the same thing? Why or why not?**
+`function foo1()
+{
+  return {
+      bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  };
+}`
+
+Surprisingly, these two functions will not return the same thing. Rather:
+
+`console.log("foo1 returns:");`
+`console.log(foo1());`
+`console.log("foo2 returns:");`
+`console.log(foo2());`
+will yield:
+
+`foo1 returns:`
+`Object {bar: "hello"}`
+`foo2 returns:`
+`undefined `
+Not only is this surprising, but what makes this particularly gnarly is that foo2() `returns` undefined without any error being thrown.
+
+The reason for this has to do with the fact that semicolons are technically optional in JavaScript (although omitting them is generally really bad form). As a result, when the line containing the return statement (with nothing else on the line) is encountered in foo2(), a semicolon is automatically inserted immediately after the return statement.
+
+No error is thrown since the remainder of the code is perfectly valid, even though it doesn’t ever get invoked or do anything (it is simply an unused code block that defines a property bar which is equal to the string "hello").
+
+This behavior also argues for following the convention of placing an opening curly brace at the end of a line in JavaScript, rather than on the beginning of a new line. As shown here, this becomes more than just a stylistic preference in JavaScript.
