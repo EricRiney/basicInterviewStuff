@@ -1,5 +1,5 @@
-//From a unsorted array, check whether there
-//are any two numbers that will sum up to a given number
+// Write a function that, from a unsorted array, checks whether there
+// are any two numbers that will sum up to a given number
 
 function sumFinder(arr, sum) {
   var len = arr.length;

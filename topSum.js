@@ -1,7 +1,6 @@
-//find the largest sum of any two elements
+// Write a function to find the largest sum of any two elements
 
 function topSum(arr) {
-
   var biggest = arr[0],
       second = arr[1],
       len = arr.length,

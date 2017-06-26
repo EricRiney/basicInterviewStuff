@@ -1,4 +1,4 @@
-//can you match substring of a sting
+// Write a function to match a substring of a string
 
 function subStringFinder(str, subStr) {
   var idx = 0,
@@ -13,14 +13,11 @@ function subStringFinder(str, subStr) {
          j++;
       else
          j = 0;
-
-      //check starting point or a match
       if(j == 0)
         idx = i;
       else if (j == subLen)
         return idx;
   }
-
   return -1;
 }
 

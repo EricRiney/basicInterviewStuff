@@ -1,3 +1,5 @@
+// Write a function to reverse a string with some 
+// half index kinda bullshit
 
 function reverse(str) {
   str = str.split('');
@@ -12,3 +14,5 @@ function reverse(str) {
   return str.join('');
 }
         
+// console.log(reverse("All dogs are good boys or girls"));
+// slrig ro syob doog era sgod llA
