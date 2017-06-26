@@ -78,14 +78,9 @@ function ctZero(num) {
     return zeros;
 }
 
-//console.log(ctZero(10));
-
-
-
-console.log(firstNonRep("heir names are legendary: Sugar Ray Leonard, Marvelous Marvin Hagler, Thomas Hit Man Hearns, and Roberto Duran. They were exceptional boxers with unique combinations of power and speed. In another era, with"));
-//console.log(isPal("anahkhh"));
-
-//console.log(cars);
-
-//console.log(remoDups('bananax'));
-//console.log(findUnique("bananaz"));
+var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
