@@ -1,6 +1,6 @@
 # basicInterviewStuff
 
-What is a potential pitfall with using typeof bar === "object" to determine if bar is an object? How can this pitfall be avoided?
+**1. What is a potential pitfall with using typeof bar === "object" to determine if bar is an object? How can this pitfall be avoided?**
 
 Although typeof bar === "object" is a reliable way of checking if bar is an object, the surprising gotcha in JavaScript is that null is also considered an object!
 
