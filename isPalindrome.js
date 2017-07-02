@@ -16,3 +16,12 @@ console.log(test);
 //   = true
 // > isPalindrome('toyota')
 //   = false
+
+// Tests:
+//=================================================
+// taco cat input
+// meow input
+// null input -> return false
+// non-String input -> false
+// empty string behavior
+//=================================================
