@@ -25,9 +25,7 @@ function CrazySum02(x, y) {
 
 // Tests:
 //=================================================
-// taco cat input
-// meow input
-// null input -> return false
-// non-String input -> false
-// empty string behavior
+// CrazySum01(null, 8) input
+// CrazySum01(8, null) input
+// CrazySum01(null) input
 //=================================================
