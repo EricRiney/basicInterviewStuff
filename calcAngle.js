@@ -11,6 +11,7 @@ function calcAngle(hour, min) {
     if (min == 60){
         min = 0;
     }
+    
     // Calculate the angles moved by hour and minute hands
     // with reference to 12:00
     var hourAngle   = (0.5 * (hour * 60 + min));
