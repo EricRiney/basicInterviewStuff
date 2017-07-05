@@ -1,4 +1,3 @@
-// Reverse a string
 
 function stringBack (s) {
     var newString = '';
@@ -77,10 +76,5 @@ function ctZero(num) {
     }
     return zeros;
 }
+console.log("i'm a lasagna hog".split("").reverse().join(""));
 
-var text = 'outside';
-function logIt(){
-    console.log(text);
-    var text = 'inside';
-};
-logIt();
