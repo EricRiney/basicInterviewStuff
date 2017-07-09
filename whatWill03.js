@@ -8,6 +8,6 @@ var output = (function(){
   
   console.log(output);
 
-  // The output would be 1. 
+  // > 1 
   // The delete operator is used to delete the property of an object. 
   // Here x is not an object, but rather it's the global variable of type number.
