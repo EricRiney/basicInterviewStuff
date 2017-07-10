@@ -19,10 +19,10 @@ var foo = function foo(){
 var foo = undefined;
     foo(); // Here foo is undefined 
  	   foo = function foo(){
- 	      / Some code stuff
+ 	      // Some code stuff
       }
  var foo = undefined;
  	 foo = function foo(){
- 	     / Some code stuff
+ 	     // Some code stuff
     }
     foo(); // Now foo is defined here
