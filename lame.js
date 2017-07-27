@@ -1,1 +1,0 @@
-function meh (oject, path, default_thing)
