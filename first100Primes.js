@@ -16,11 +16,11 @@ function isPrime(n) {
 function printPrime(cnt) {
     console.log("prime");
     var nums = 1;
-    var primesToPrint = 0;
-    while(primesToPrint < cnt) {
+    var primesPrinted = 0;
+    while(primesPrinted < cnt) {
         if (isPrime(nums)) {
             console.log(nums);
-            primesToPrint++;
+            primesPrinted++;
         }        
         nums++;
     }   

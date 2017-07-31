@@ -20,5 +20,19 @@ function removeDuplicateChar(str) {
   return newStr.join('');
 }
 
-// > removeDuplicateChar('Learn more javascript dude');
+console.log(removeDuplicateCharToo('anaconda'));
 //   = "Lnmojvsciptu"
+
+function removeDuplicateCharToo(str) {
+  var unique = '';
+  for (var i = 0; i < str.length; i++) {
+    if(unique.indexOf(str[i])==-1){
+    //if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+      unique += str[i];
+    }
+  }
+  return unique;
+}
+
+// console.log(find_unique_characters('baraban'));
+// console.log(find_unique_characters('anaconda'));
