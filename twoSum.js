@@ -1,8 +1,11 @@
+
+
 function twoSum(nums, target_num) {
     var map = [];
     var indexnum = [];
+    var index;
     for (var x = 0; x < nums.length; x++) {
-        if (map[nums[x]] != null){
+        if (map[nums[x]] != null) {
             index = map[nums[x]];
             indexnum[0] = index+1;
             indexnum[1] = x+1;
