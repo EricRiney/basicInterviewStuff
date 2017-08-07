@@ -4,14 +4,14 @@ function twoSum(nums, target_num) {
     var map = [];
     var indexnum = [];
     var index;
-    for (var x = 0; x < nums.length; x++) {
-        if (map[nums[x]] != null) {
-            index = map[nums[x]];
+    for (var i = 0; i < nums.length; i++) {
+        if (map[nums[i]] != null) {
+            index = map[nums[i]];
             indexnum[0] = index+1;
-            indexnum[1] = x+1;
+            indexnum[1] = i+1;
             break;
         } else {
-            map[target_num - nums[x]] = x;
+            map[target_num - nums[i]] = i;
         }
     }
     return indexnum;
