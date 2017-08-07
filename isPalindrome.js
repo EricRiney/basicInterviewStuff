@@ -11,6 +11,19 @@ function isPalindrome(str) {
   return true;
 }
 
+function isPalindrome2(word) {
+    var s = new Stack();
+    var rword = "";
+    for (var i = 0; i < word.length; ++i) {
+        s.push(word[i]);
+    }
+    while (s.length() > 0) {
+        rword += s.pop();
+    }
+    return (word == rword);
+}
+
+
 var test = isPalindrome('madam');
 console.log(test);
 //   = true
