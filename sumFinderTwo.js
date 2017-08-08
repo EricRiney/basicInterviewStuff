@@ -2,7 +2,7 @@
 // are any two numbers that will sum up to a given number
 
 function sumFinder(arr, sum) {
-  var differ = {};
+  var differ = [];
   var len = arr.length;
   var substract;
 
@@ -19,5 +19,5 @@ function sumFinder(arr, sum) {
 
 console.log(sumFinder([6,4,3,2,1,7], 9));
 //   = true
-// > sumFinder([6,4,3,2,1,7], 2);
+console.log(sumFinder([6,4,3,2,1,7], 2));
 //   = false

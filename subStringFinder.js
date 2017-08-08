@@ -7,22 +7,25 @@ function subStringFinder(str, subStr) {
   var len = str.length;
   var subLen = subStr.length;
 
-   for(i; i<len; i++){
-      if(str[i] == subStr[j])
+   for(i; i < len; i++) {
+      if(str[i] == subStr[j]) {
          j++;
-      else
+      } else {
          j = 0;
-      if(j == 0)
+      }
+      if(j == 0) {
         idx = i;
-      else if (j == subLen)
+      } 
+      else if (j == subLen) {
         return idx;
+      }
   }
   return -1;
 }
 
-// > subStringFinder('abbcdabbbbbck', 'ab')
+console.log(subStringFinder('abbcdabbbbbck', 'ab'));
 //   = 0
-// > subStringFinder('abbcdabbbbbck', 'bck')
+console.log(subStringFinder('abbcdabbbbbck', 'bck'));
 //   = 9
 
 //doesn't work for this one.
