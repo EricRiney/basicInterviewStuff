@@ -3,7 +3,7 @@
 function removeDuplicateChar(str) {
   var len = str.length;
   var char;
-  var charCount = {};
+  var charCount = [];
   var newStr = [];
   for(var i = 0; i < len; i++) {
     char = str[i];
@@ -21,7 +21,7 @@ function removeDuplicateChar(str) {
 }
 
 console.log(removeDuplicateCharToo('anaconda'));
-//   = "Lnmojvsciptu"
+
 
 function removeDuplicateCharToo(str) {
   var unique = '';
@@ -34,5 +34,5 @@ function removeDuplicateCharToo(str) {
   return unique;
 }
 
-// console.log(find_unique_characters('baraban'));
+//console.log(find_unique_characters('baraban'));
 // console.log(find_unique_characters('anaconda'));
