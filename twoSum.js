@@ -1,4 +1,4 @@
-
+// Determine if array contains two elements which equal a certain sum?
 
 function twoSum(nums, target_num) {
     var map = [];
@@ -18,5 +18,16 @@ function twoSum(nums, target_num) {
 }
 var nums = [10,20,10,40,50,60,70]
 var target = 50;
-console.log(twoSum(nums,target));
+console.log(thing(nums,target));
+
+function twoSumTwo(nums, target) {
+    var len = nums.length;
+    var sum;
+    for (var i = 0; i < len; i++) {
+        for (var j = i+1; j < len; j++) {
+            if (target === nums[j]) return true;
+        }
+    }
+    return false;
+}
 
