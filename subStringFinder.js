@@ -1,14 +1,13 @@
 // Write a function to match a substring of a string
 
 function subStringFinder(str, subStr) {
-  var idx = 0,
-      i = 0,
-      j = 0,
-      len = str.length,
-      subLen = subStr.length;
+  var idx = 0;
+  var i = 0;
+  var j = 0;
+  var len = str.length;
+  var subLen = subStr.length;
 
-   for(; i<len; i++){
-
+   for(i; i<len; i++){
       if(str[i] == subStr[j])
          j++;
       else
