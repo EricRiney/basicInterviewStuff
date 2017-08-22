@@ -1,4 +1,5 @@
-// How could you implement cache to save calculation time for a recursive fibonacci function?
+// How could you implement cache to save 
+// calculation time for a recursive fibonacci function?
 
 var memo = [];
 
@@ -8,7 +9,7 @@ function _fibonacci(n) {
    }
    else if (n < 2){
      return 1;
-   }else{
+   } else {
      fibonacci(n-2) + fibonacci(n-1);
    }
 }

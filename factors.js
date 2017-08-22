@@ -16,4 +16,4 @@ function primeFactors(n) {
     return factors;
 }
 
-//console.log(primeFactors(69)); //[3, 23]
+console.log(primeFactors(864)); //[3, 23]
