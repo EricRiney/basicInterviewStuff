@@ -4,7 +4,7 @@ function firstNonRepeatChar(str) {
   var len = str.length;
   var char = '';
   var charCount = [];
-  for(var i =0; i<len; i++) {
+  for(var i = 0; i < len; i++) {
     char = str[i];
     if(charCount[char]){
       charCount[char]++;
