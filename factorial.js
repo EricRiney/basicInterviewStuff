@@ -19,3 +19,5 @@ function fact(n) {
     }
     return product; 
 }
+
+console.log(factorial(4));
