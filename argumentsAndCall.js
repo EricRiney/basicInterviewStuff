@@ -1,4 +1,5 @@
-// Write a simple function to tell whether 2 is passed as a parameter or not?
+// Write a simple function to tell whether 
+// 2 is passed as a parameter or not?
 
 function isTwoPassed(){
   var args = Array.prototype.slice.call(arguments);
