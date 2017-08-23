@@ -26,13 +26,13 @@ console.log(removeDuplicateCharToo('anaconda'));
 function removeDuplicateCharToo(str) {
   var unique = '';
   for (var i = 0; i < str.length; i++) {
-    if(unique.indexOf(str[i])==-1){
-    //if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+    //if(unique.indexOf(str[i])==-1){                     // takes one out 
+    if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) { // takes both out
       unique += str[i];
     }
   }
   return unique;
 }
 
-//console.log(find_unique_characters('baraban'));
+console.log(removeDuplicateCharToo('baraban'));
 // console.log(find_unique_characters('anaconda'));

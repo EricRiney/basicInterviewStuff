@@ -12,7 +12,6 @@ function firstNonRepeatChar(str) {
     else
       charCount[char] = 1;
   }
-  console.log(charCount);
   for (var letter in charCount) {
     if (charCount[letter]==1)
        return letter;
